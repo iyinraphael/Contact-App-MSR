@@ -14,6 +14,8 @@
 		EB1DE1C42239A2CF004F060C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE1C32239A2CF004F060C /* main.m */; };
 		EBC79A652239A7F600313F49 /* LSIContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A642239A7F600313F49 /* LSIContactTableViewController.m */; };
 		EBC79A682239A80A00313F49 /* LSIContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A672239A80A00313F49 /* LSIContactViewController.m */; };
+		EBC79A6B2239AA0A00313F49 /* LSIContact.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A6A2239AA0A00313F49 /* LSIContact.m */; };
+		EBC79A6E2239AFD100313F49 /* LSIContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A6D2239AFD100313F49 /* LSIContactController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		EBC79A642239A7F600313F49 /* LSIContactTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactTableViewController.m; sourceTree = "<group>"; };
 		EBC79A662239A80A00313F49 /* LSIContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactViewController.h; sourceTree = "<group>"; };
 		EBC79A672239A80A00313F49 /* LSIContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactViewController.m; sourceTree = "<group>"; };
+		EBC79A692239AA0A00313F49 /* LSIContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContact.h; sourceTree = "<group>"; };
+		EBC79A6A2239AA0A00313F49 /* LSIContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContact.m; sourceTree = "<group>"; };
+		EBC79A6C2239AFD100313F49 /* LSIContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactController.h; sourceTree = "<group>"; };
+		EBC79A6D2239AFD100313F49 /* LSIContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 		EB1DE1CA2239A435004F060C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBC79A692239AA0A00313F49 /* LSIContact.h */,
+				EBC79A6A2239AA0A00313F49 /* LSIContact.m */,
+				EBC79A6C2239AFD100313F49 /* LSIContactController.h */,
+				EBC79A6D2239AFD100313F49 /* LSIContactController.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,7 +183,9 @@
 				EBC79A682239A80A00313F49 /* LSIContactViewController.m in Sources */,
 				EBC79A652239A7F600313F49 /* LSIContactTableViewController.m in Sources */,
 				EB1DE1C42239A2CF004F060C /* main.m in Sources */,
+				EBC79A6B2239AA0A00313F49 /* LSIContact.m in Sources */,
 				EB1DE1B62239A2CB004F060C /* AppDelegate.m in Sources */,
+				EBC79A6E2239AFD100313F49 /* LSIContactController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +220,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -267,7 +279,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
