@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LSIContactViewController.h
 //  Contact-MSR
 //
 //  Created by Iyin Raphael on 3/13/19.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
-
+@interface LSIContactViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

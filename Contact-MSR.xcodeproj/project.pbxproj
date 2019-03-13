@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		EB1DE1B62239A2CB004F060C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE1B52239A2CB004F060C /* AppDelegate.m */; };
-		EB1DE1B92239A2CB004F060C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE1B82239A2CB004F060C /* ViewController.m */; };
 		EB1DE1BC2239A2CC004F060C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DE1BA2239A2CC004F060C /* Main.storyboard */; };
 		EB1DE1BE2239A2CF004F060C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1DE1BD2239A2CF004F060C /* Assets.xcassets */; };
 		EB1DE1C12239A2CF004F060C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1DE1BF2239A2CF004F060C /* LaunchScreen.storyboard */; };
 		EB1DE1C42239A2CF004F060C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1DE1C32239A2CF004F060C /* main.m */; };
+		EBC79A652239A7F600313F49 /* LSIContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A642239A7F600313F49 /* LSIContactTableViewController.m */; };
+		EBC79A682239A80A00313F49 /* LSIContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A672239A80A00313F49 /* LSIContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB1DE1B12239A2CB004F060C /* Contact-MSR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact-MSR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1DE1B42239A2CB004F060C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB1DE1B52239A2CB004F060C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB1DE1B72239A2CB004F060C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB1DE1B82239A2CB004F060C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB1DE1BB2239A2CC004F060C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1DE1BD2239A2CF004F060C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1DE1C02239A2CF004F060C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1DE1C22239A2CF004F060C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1DE1C32239A2CF004F060C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBC79A632239A7F600313F49 /* LSIContactTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactTableViewController.h; sourceTree = "<group>"; };
+		EBC79A642239A7F600313F49 /* LSIContactTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactTableViewController.m; sourceTree = "<group>"; };
+		EBC79A662239A80A00313F49 /* LSIContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactViewController.h; sourceTree = "<group>"; };
+		EBC79A672239A80A00313F49 /* LSIContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +61,43 @@
 		EB1DE1B32239A2CB004F060C /* Contact-MSR */ = {
 			isa = PBXGroup;
 			children = (
-				EB1DE1B42239A2CB004F060C /* AppDelegate.h */,
-				EB1DE1B52239A2CB004F060C /* AppDelegate.m */,
-				EB1DE1B72239A2CB004F060C /* ViewController.h */,
-				EB1DE1B82239A2CB004F060C /* ViewController.m */,
-				EB1DE1BA2239A2CC004F060C /* Main.storyboard */,
+				EB1DE1CD2239A49B004F060C /* Resources */,
+				EB1DE1CB2239A43F004F060C /* View Controller */,
+				EB1DE1CA2239A435004F060C /* Model */,
 				EB1DE1BD2239A2CF004F060C /* Assets.xcassets */,
-				EB1DE1BF2239A2CF004F060C /* LaunchScreen.storyboard */,
 				EB1DE1C22239A2CF004F060C /* Info.plist */,
-				EB1DE1C32239A2CF004F060C /* main.m */,
 			);
 			path = "Contact-MSR";
+			sourceTree = "<group>";
+		};
+		EB1DE1CA2239A435004F060C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB1DE1CB2239A43F004F060C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBC79A632239A7F600313F49 /* LSIContactTableViewController.h */,
+				EBC79A642239A7F600313F49 /* LSIContactTableViewController.m */,
+				EBC79A662239A80A00313F49 /* LSIContactViewController.h */,
+				EBC79A672239A80A00313F49 /* LSIContactViewController.m */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		EB1DE1CD2239A49B004F060C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB1DE1B42239A2CB004F060C /* AppDelegate.h */,
+				EB1DE1B52239A2CB004F060C /* AppDelegate.m */,
+				EB1DE1BA2239A2CC004F060C /* Main.storyboard */,
+				EB1DE1BF2239A2CF004F060C /* LaunchScreen.storyboard */,
+				EB1DE1C32239A2CF004F060C /* main.m */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1DE1B92239A2CB004F060C /* ViewController.m in Sources */,
+				EBC79A682239A80A00313F49 /* LSIContactViewController.m in Sources */,
+				EBC79A652239A7F600313F49 /* LSIContactTableViewController.m in Sources */,
 				EB1DE1C42239A2CF004F060C /* main.m in Sources */,
 				EB1DE1B62239A2CB004F060C /* AppDelegate.m in Sources */,
 			);
