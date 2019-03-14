@@ -38,7 +38,7 @@
     contact.emailAddress = emailAddress;
 }
 
-- (NSArray *)contact
+- (NSArray *)contacts
 {
     return self.internalContacts;
 }

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) createContactName: (NSString *)name emailAddress: (NSString *)emailAddress;
 -(void) updateContact: (LSIContact *)contact name: (NSString *)name emailAddress: (NSString *)emailAddress;
-@property (nonatomic, readonly) NSArray *contact;
+@property (nonatomic, readonly) NSArray *contacts;
 
 @end
 
