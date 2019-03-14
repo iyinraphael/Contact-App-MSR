@@ -19,10 +19,21 @@
 
 @implementation LSIContactTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    _controller = [[LSIContactController alloc] init];
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    [super initWithCoder:aDecoder];
+    self = [super self];
     
+    if (self){
+        _controller = [[LSIContactController alloc] init];
+    }
+    return self;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -57,7 +68,6 @@
     } else if ([segue.identifier isEqualToString:@"addContact"]){
         LSIContactViewController *detailVC = segue.destinationViewController;
         detailVC.controller = self.controller;
-
     }
 }
 

@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIContactViewController : UIViewController
 
-@property LSIContactController *controller;
-@property LSIContact *contact;
+@property (weak) LSIContactController *controller;
+@property (weak) LSIContact *contact;
 
 
 @end
